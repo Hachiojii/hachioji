@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hachioji's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="logo">
+            <a href="#"><img src="img/logo.png" alt="ロゴ" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/X_logo.png" alt="X (Twitter) icon" /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/Instagram_logo.png" alt="Instagram icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/note_logo.png" alt="Note icon" /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header-content">
+        <h1>Hachioji's portfolio</h1>
+        <p>現役理学療法士・ライター・プログラマー</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="greeting">
+        <h2>ご挨拶</h2>
+        <div class="greeting-content">
+          <img src="img/handshake.jpg" alt="handshake" class="greeting-image" />
+          <div class="greeting-text">
+            <p>臨床経験9年になる現役理学療法士です。</p>
+            <p>
+              常に何かにチャレンジしたい！という気持ちが強く理学療法士を飛び出し、色々なことに挑戦しています！
+            </p>
+            <p>
+              2023年からライターとして活動を始め、素敵なめぐり合わせにより登録者10万人を超えるチャンネルの台本や、選挙関連の記事など100本以上の記事をいままで執筆していきました。
+            </p>
+            <p>
+              2024年からプログラミングに挑戦し、勉強約4ヶ月でこのポートフォリオを作成しています。漠然と難しそうだと思っていたプログラミングは、やはり難しかったですがその分やりがいがあり楽しく勉強できています！
+            </p>
+            <p>まだまだお見苦しい点もあると思いますが、ぜひご覧ください。</p>
+            <a href="#" class="details-button">詳しくはこちら &gt;</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>スキル紹介</h2>
+        <div class="skills-content">
+          <img src="img/skill.jpg" alt="skill" class="skills-image" />
+          <div class="skills-list">
+            <div class="skill-item">
+              <h3>01 ライティング</h3>
+              <p>ブログ記事、動画台本、ゆっくり実況</p>
+              <p>
+                動画台本とゆっくり実況の台本を主に、これまで100本以上の台本作成実績があります
+              </p>
+            </div>
+            <div class="skill-item">
+              <h3>02 プログラミング</h3>
+
+              <p>HTML,CSS,JavaScript</p>
+              <p>今後はPythonやReactのスキルを所得予定です！</p>
+            </div>
+            <div class="skill-item">
+              <h3>03 理学療法士</h3>
+              <p>総合病院に勤務。得意領域は、運動器・脳神経系・廃用症候群</p>
+
+              <p>
+                毎日の小さい成長に目をむけ、患者様のモチベーションを上げ一緒に目標を達成するのが得意であり、やりがいです！
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>プロジェクト</h2>
+
+        <div class="project-category">
+          <h3>プログラミング</h3>
+          <div class="project-grid">
+            <div class="project-item">
+              <div class="placeholder-box"></div>
+              <h4>プログラミングプロジェクト 1</h4>
+            </div>
+            <div class="project-item">
+              <div class="placeholder-box"></div>
+              <h4>プログラミングプロジェクト 2</h4>
+            </div>
+            <div class="project-item">
+              <div class="placeholder-box"></div>
+              <h4>プログラミングプロジェクト 3</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-category">
+          <h3>ライティング</h3>
+          <div class="project-grid">
+            <div class="project-item video-thumbnail">
+              <a
+                href="https://youtu.be/TPe_og510h8?si=vTglDOU33VN21D3Q"
+                target="_blank"
+              >
+                <img
+                  src="https://img.youtube.com/vi/TPe_og510h8/0.jpg"
+                  alt="YouTube動画サムネイル"
+                />
+                <div class="play-button"></div>
+              </a>
+              <h4>
+                ド文系でも楽しい【ゆっくり数学の雑学】様<br />動画台本、スライド作成
+              </h4>
+            </div>
+            <div class="project-item">
+              <div class="placeholder-box"></div>
+              <h4>ライティングプロジェクト 2</h4>
+            </div>
+            <div class="project-item">
+              <div class="placeholder-box"></div>
+              <h4>ライティングプロジェクト 3</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>お問い合わせ</h2>
+        <div class="contact-content">
+          <img
+            src="img/me.JPG
+          "
+            alt="me"
+            class="character-image"
+          />
+          <form id="contact-form">
+            <input type="text" name="name" placeholder="お名前" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="メールアドレス"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="メッセージ"
+              required
+            ></textarea>
+            <button type="submit">送信</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Hachiji's Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
