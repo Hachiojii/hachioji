@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const star = document.createElement("div");
     star.classList.add("shooting-star");
 
-    // ランダムな開始位置（header領域の上部20%の範囲内）
-    const startX = Math.random() * window.innerWidth;
+    // ヘッダーの範囲内に収まるように位置を設定
+    const startX = Math.random() * header.clientWidth;
     const startY = Math.random() * header.clientHeight * 0.2;
     star.style.left = `${startX}px`;
     star.style.top = `${startY}px`;
@@ -30,17 +30,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     header.appendChild(star);
 
+    // ランダムな速度を設定（0.5秒から2秒の間）
+    const duration = Math.random() * 1500 + 500;
+
+    // 停止位置を事前に計算（ヘッダーの下から5%の位置）
+    const stopY = header.clientHeight * 0.6;
+    const stopX = Math.tan((angle * Math.PI) / 180) * stopY;
+
     // アニメーションの開始時間を記録
     const startTime = performance.now();
-    const duration = Math.random() * 1000 + 1000; // 1秒 から 2秒 の間
 
     // アニメーション関数
     function animate(currentTime) {
       const elapsed = currentTime - startTime;
       if (elapsed < duration) {
         const progress = elapsed / duration;
-        const translateY = progress * window.innerHeight;
-        const translateX = Math.tan((angle * Math.PI) / 180) * translateY;
+        const translateY = progress * stopY;
+        const translateX = progress * stopX;
         star.style.transform = `translate(${translateX}px, ${translateY}px) rotate(${-angle}deg)`;
         requestAnimationFrame(animate);
       } else {
