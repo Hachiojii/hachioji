@@ -20,6 +20,7 @@ header {
   position: relative;
   overflow: hidden;
   height: 100vh;
+  width: 100%; /* 幅を明示的に設定 */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,6 +229,9 @@ footer {
     rgba(255, 255, 255, 0) 100%
   );
   pointer-events: none;
+  z-index: 10;
+  max-width: 100%; /* 最大幅を設定 */
+  max-height: 100%; /* 最大高さを設定 */
 }
 
 .fade-in {
