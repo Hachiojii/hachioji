@@ -209,10 +209,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.about-me {
-  color: #000;
-}
-
 .section-title {
   font-size: 3rem;
   font-weight: normal;
@@ -222,21 +218,22 @@ body {
   align-items: flex-end;
   gap: 1rem;
   line-height: 1;
-  padding: 0 0 0 5%;
+  padding: 0 5%;
   max-width: 1200px;
-  margin-left: auto;
+  margin-left: 5%;
   margin-right: auto;
 }
 
-.about-content {
-  padding: 10px 10%;
-  display: flex;
-  gap: 2rem;
-  align-items: flex-start;
+.about-me {
   max-width: 1200px;
-  margin: 0 auto;
+}
+
+.about-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 5%;
   gap: 60px;
-  align-items: flex-start;
 }
 
 .profile-image {
@@ -292,6 +289,7 @@ body {
 }
 
 .profile-text {
+  max-width: 600px;
   flex: 1;
   line-height: 1.8;
 }
