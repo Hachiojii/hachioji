@@ -76,3 +76,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const elements = document.querySelectorAll(
+    ".section-title, .about-content, .programming-skills, .splide, .contact-info"
+  );
+
+  function checkVisibility() {
+    const screenPosition = window.innerHeight / 1.3;
+
+    elements.forEach((element) => {
+      const position = element.getBoundingClientRect().top;
+      if (position < screenPosition) {
+        element.classList.add("visible");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", checkVisibility);
+  checkVisibility(); // 初期チェック
+});
