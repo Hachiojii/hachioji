@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hachioji's portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  </head>
+  <body>
+    <div class="main-visual">
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="mov/mainvisual.mp4" type="video/mp4" />
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+
+      <div class="content-wrapper">
+        <img
+          src="img/mainvisual.png"
+          alt="ITで医療はもっと良くなる"
+          class="mainvisual-image"
+        />
+
+        <div class="text-content">
+          <p class="portfolio-text">Thanks for watching.</p>
+          <p class="portfolio-text">Hachioji's portfolio</p>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 100">
+          <path
+            class="heartbeat-line"
+            d="M0,50 
+               L50,50 
+               C60,50 65,45 70,40 
+               L75,50 
+               L80,50 
+               L85,50 
+               L90,20 
+               L95,80 
+               L100,50 
+               L105,50 
+               C115,50 120,45 125,40 
+               L130,50 
+               L150,50
+               L200,50 
+               C210,50 215,45 220,40 
+               L225,50 
+               L230,50 
+               L235,50 
+               L240,20 
+               L245,80 
+               L250,50 
+               L255,50 
+               C265,50 270,45 275,40 
+               L280,50 
+               L300,50"
+          />
+        </svg>
+        <span class="scroll-text">Scroll</span>
+      </div>
+    </div>
+
+    <section class="about-me">
+      <h2 class="section-title">
+        自己紹介 <span class="section-title-en">/ About me</span>
+      </h2>
+      <div class="about-content">
+        <img src="img\me.JPG" alt="Profile image" />
+        <div class="profile-text">
+          <p>
+            10年のキャリアを持つ理学療法士として、脳卒中や整形外科分野でのリハビリテーションに携わってきました。「歩行困難」だった患者さんがオリンピックのボランティアとして参加できるまでの回復支援など、「できない」から「できる」への変化に寄り添ってきました。
+          </p>
+
+          <p>
+            医療現場での経験から、紙ベースでの計算作業やデータ管理の非効率さを実感し、これらの課題を解決したいという思いでプログラミングを始めました。
+          </p>
+
+          <p>
+            現在はプログラミングを活用し、一般の方でも使いやすい医療系Webサイトの開発や、業務効率化ツールの作成に取り組んでいます。
+          </p>
+
+          <p>
+            医療現場を知るエンジニアとして、現場のニーズを理解した実用的なソリューションを提供していきたいと考えています。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills">
+      <h2 class="section-title">
+        スキル <span class="section-title-en">/ Skills</span>
+      </h2>
+      <div class="programming-skills">
+        <div class="skill-item">
+          <img src="img/HTML.png" alt="HTML5" class="skill-icon" />
+          <p class="skill-name">HTML5</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/CSS.png" alt="CSS3" class="skill-icon" />
+          <p class="skill-name">CSS3</p>
+        </div>
+        <div class="skill-item">
+          <img src="img/JS.png" alt="JavaScript" class="skill-icon" />
+          <p class="skill-name">JavaScript</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section interests">
+      <h2 class="section-title">
+        好きな事 <span class="section-title-en">/ Interests</span>
+      </h2>
+      <div class="splide" role="group" aria-label="Interests">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <!-- Sports -->
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/basketball.png" alt="バスケットボール" />
+                <p>Basketball</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/running.png" alt="ランニング" />
+                <p>Running</p>
+              </div>
+            </li>
+
+            <!-- Hobbies -->
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/game.png" alt="ゲーム" />
+                <p>Gaming</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/making.png" alt="モノづくり" />
+                <p>Creating</p>
+              </div>
+            </li>
+
+            <!-- Others -->
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/penguin.png" alt="ペンギン" />
+                <p>Penguins</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="slide-content">
+                <img src="img/thinking.png" alt="思考" />
+                <p>Problem Solving</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- コメントコンテナ -->
+      <div class="slides-comments">
+        <div class="comment" data-slide="0">
+          小学生～大学生までバスケットボールをしていました<br>
+          ポジションはPGかSGをしていました。<br>
+          コート上で一番小さい選手だったことも多かったですが<br>
+          気持ちだけは誰よりも大きく存在感を出せるように頑張っていました。
+        </div>
+        <div class="comment" data-slide="1">
+「年に１回はマラソン大会に出る事。」<br>
+体育教師の父親を持つ家庭のルールでした。<br>
+でもそのお陰で走る事、運動することが得意です。<br>
+
+        </div>
+        <div class="comment" data-slide="2">
+オンラインで知り合ったゲーム仲間との縁も<br>
+気が付けばもう10年になっています。<br>
+私のストレス発散はこの仲間とのゲームです。<br>
+ハチおじと言う名前もこの仲間につけてもらいました。
+        </div>
+        <div class="comment" data-slide="3">
+小さいころから工作や修理が大好きでした。<br>
+自分の為に作ることも好きでしたが<br>
+兄弟や友達と協力して作るのも大好き。<br>
+作るのも直すのも好きな私は<br>
+プログラミングにむいていますね。
+        </div>
+        <div class="comment" data-slide="4">
+飛べない鳥がすきです。<br>
+特にペンギンは可愛らしいフォルムもあり<br>
+小さいころから水族館に行っては<br>
+お土産はペンギンのぬいぐるみでした。
+        </div>
+        <div class="comment" data-slide="5">
+何かを考えることが好きです。<br>
+考えた事で生まれたアイデアを形にして<br>
+自分の為、周りの為になればうれしいですし<br>
+後悔しない為にも私はいつも何かを考えます。
+        </div>
+      </div>
+    </section>
+
+    <section class="works">
+      <h2 class="section-title">
+        制作物 <span class="section-title-en">/ Works</span>
+      </h2>
+      <div class="works-grid">
+        <div class="work-item">
+          <img
+            src="img\Exercise-Tracker.png"
+            alt="Exercise-Tracker"
+            class="modal-trigger"
+            data-modal="modal1"
+          />
+        </div>
+        <div class="work-item">
+          <img
+            src="img\games.png"
+            alt="game"
+            class="modal-trigger"
+            data-modal="modal2"
+          />
+        </div>
+        <div class="work-item">
+          <img
+            src="img\coming_soon.png"
+            alt="作品3"
+            class="modal-trigger"
+            data-modal="modal3"
+          />
+        </div>
+        <div class="work-item">
+          <img
+            src="img\coming_soon.png"
+            alt="作品4"
+            class="modal-trigger"
+            data-modal="modal4"
+          />
+        </div>
+        <div class="work-item">
+          <img
+            src="img\coming_soon.png"
+            alt="作品5"
+            class="modal-trigger"
+            data-modal="modal5"
+          />
+        </div>
+        <div class="work-item">
+          <img
+            src="img\coming_soon.png"
+            alt="作品6"
+            class="modal-trigger"
+            data-modal="modal6"
+          />
+        </div>
+      </div>
+
+      <!-- モーダル -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>運動記録表</h3>
+          <a href="https://hachiojii.github.io/Exercise-Tracker/" target="_blank">
+            <img src="img\Exercise-Tracker.png" alt="Exercise-Tracker" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>運動記録表です。</p>
+            <br />
+            <p>
+              ここでは「Mets」という数値を使って運動の強度を表しています。Mets（メッツ）とは、身体活動の強さを示す単位で、安静に座っている状態を「1」とし、それと比べてどれくらい多くのエネルギーを消費するかを表します。
+            </p>
+            <p>
+              一般的に「カロリー」という言葉はよく知られていますが、このMetsは、そのカロリー消費量を計算する際に必要な指標となります。この運動記録表では、体重を入力することで、その人が実際に消費したと推定されるカロリーを計算できる仕組みになっています。
+            </p>
+            <p>
+              また、いくつかの運動種目も追加されていますので、ぜひ一度身長と体重を入力して試してみてください。「このくらい運動すると、これだけカロリーを消費するんだ」と具体的に知ることは、運動管理や健康維持においてとても重要です。
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://hachiojii.github.io/Exercise-Tracker/" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>game</h3>
+          <a href="https://hachiojii.github.io/game/" target="_blank">
+            <img src="img\games.png" alt="game" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>私が高校生だった頃、クラスメイトが似たようなものを作っていて、それがとても印象に残っていました。当時はプログラミングやアプリ制作の知識が全くなかったので、「こんなすごいものを自分で作れるなんてすごいな」と感心するばかりでした。しかし、その経験がきっかけで「いつか自分も同じようなものを作れるようになりたい」と強く思うようになりました。</p>
+            <p>その後、プログラミングを学び始め、基本的なスキルが身についてきた頃に、高校時代に見たゲームの画面や体験を思い出し、「あの時と同じものを作ってみたい！」と思い立ち、制作に取り組みました。これが私にとって初めてのアプリケーション制作だったため、何から手をつければいいのか分からず、試行錯誤の連続でした。エラーや壁にぶつかるたびに調べたり修正したりと、かなり苦労しましたが、諦めずに取り組んだ結果、なんとか完成させることができました。</p>
+    <p>このゲームは、1回あたり約5分程度でクリアできるシンプルな内容になっています。短い時間で気軽に遊べるよう工夫しましたので、ぜひ一度プレイしてみてください！制作当時の初心者らしい試みや工夫も感じていただけると思います。このゲームを通じて、高校時代の私が感じた「ものづくりの楽しさ」や「挑戦する喜び」を少しでも共有できたら嬉しいです。</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://hachiojii.github.io/game/" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>モーダル3のタイトル</h3>
+          <a href="https://example.com/link3" target="_blank">
+            <img src="img\coming_soon.png" alt="作品3" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>モーダル3の内容をここに記入します。</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://example.com/link3" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>モーダル4のタイトル</h3>
+          <a href="https://example.com/link4" target="_blank">
+            <img src="img\coming_soon.png" alt="作品4" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>モーダル4の内容をここに記入します。</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://example.com/link4" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>モーダル5のタイトル</h3>
+          <a href="https://example.com/link5" target="_blank">
+            <img src="img\coming_soon.png" alt="作品5" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>モーダル5の内容をここに記入します。</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://example.com/link5" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h3>モーダル6のタイトル</h3>
+          <a href="https://example.com/link6" target="_blank">
+            <img src="img\coming_soon.png" alt="作品6" class="modal-image" />
+          </a>
+          <div class="modal-description">
+            <p>モーダル6の内容をここに記入します。</p>
+          </div>
+          <div class="modal-footer">
+            <a href="https://example.com/link6" target="_blank" class="modal-button">
+              サイトにアクセス
+            </a>
+          </div>
+        </div>
+      </div>
+
+    <section class="contact">
+      <h2 class="section-title">
+        お問い合わせ <span class="section-title-en">/ Contact</span>
+      </h2>
+      <div class="contact-info">
+        <p>対応可能時間:</p>
+        <ul>
+          <li>月～土曜日: 21:00～24:00</li>
+          <li>日曜日: 随時対応</li>
+        </ul>
+        <p>
+          メールアドレス:
+          <a href="mailto:example@example.com">example@example.com</a>
+        </p>
+        <p>
+          Xアカウント:
+          <a href="https://x.com/youraccount" target="_blank">@youraccount</a>
+        </p>
+        <p>
+          Noteアカウント:
+          <a href="https://note.com/youraccount" target="_blank"
+            >note.com/youraccount</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>© 2025 Hachioji</p>
+        <p>Contact: <a href="mailto:hachiojiiphone@gmail.com">hachiojiiphone@gmail.com</a></p>
+        <div class="social-links">
+          <a href="https://www.threads.net/@hachioji_iphone" target="_blank">Threads</a>
+          <a href="https://note.com/hachiojiiphone" target="_blank">Note</a>
+          <a href="https://x.com/hachiojiiphone" target="_blank">X</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
